@@ -1,0 +1,17 @@
+<h3>Runtimes for <%= number_with_delimiter(ApplicationController::REPETITIONS) %> executions of <%= ApplicationController::NUMBER %>! </h3>
+
+<p>
+  Ruby: 
+  <span><%= @ruby_runtime %></span>
+  <span>seconds</span>
+</p>
+
+<p>
+  C: 
+  <span><%= @c_runtime %></span>
+  <span>seconds</span>
+</p>
+
+<p>
+  <span>C is <%= @faster_percentage %>% faster than Ruby</span>
+</p>
